@@ -5,6 +5,7 @@ class UserModel {
 
 
   UserModel({this.id, this.fullName, this.email});
+  
   UserModel.fromData(Map<String, dynamic> data)
       : id = data['id'],
         fullName = data['fullName'],
@@ -17,4 +18,15 @@ class UserModel {
       
     };
   }
+
+ 
 }
+
+ class UserData { 
+  final String uid;
+  final String fullName;
+  final String email;
+
+
+  UserData({this.uid, this.fullName, this.email});
+  }
